@@ -108,6 +108,19 @@ button:focus-visible {
 	outline-offset: 5px;
 }
 
+.store-link {
+	display: inline-block;
+	margin-left: 18px;
+	color: var(--violet-dark);
+	font-weight: 700;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+}
+
+.store-link:hover {
+	color: var(--pink);
+}
+
 .note {
 	min-height: 1.5em;
 	margin: 22px 0 0;
@@ -171,6 +184,12 @@ button:focus-visible {
 
 	.copy {
 		padding: 40px 28px 36px;
+	}
+
+	.store-link {
+		display: block;
+		width: fit-content;
+		margin: 22px 0 0;
 	}
 
 	.visual {

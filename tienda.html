@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luna Glow, productos de maquillaje para destacar tu estilo.">
+    <title>Luna Glow | Tienda de maquillaje</title>
+    <link rel="stylesheet" href="tienda.css">
+    <script src="tienda.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="hola.html" aria-label="Volver al inicio">Luna <span>Glow</span></a>
+        <nav aria-label="Navegación principal">
+            <a href="#productos">Productos</a>
+            <a href="#historia">Nuestra historia</a>
+        </nav>
+        <button class="cart-button" id="cartButton" type="button" aria-label="Abrir carrito">
+            Carrito <span id="cartCount">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="historia">
+            <div>
+                <p class="eyebrow">Maquillaje para expresarte</p>
+                <h1>Tu look,<br><em>tus reglas.</em></h1>
+                <p class="hero-text">Color, brillo y fórmulas que se sienten tan bien como se ven.</p>
+                <a class="primary-link" href="#productos">Explorar productos</a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <span class="sparkle sparkle-one">✦</span>
+                <span class="sparkle sparkle-two">✦</span>
+                <div class="compact">GLOW<br>ON</div>
+            </div>
+        </section>
+
+        <section class="catalog" id="productos" aria-labelledby="productsTitle">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Favoritos de la semana</p>
+                    <h2 id="productsTitle">Encuentra tu próximo imprescindible</h2>
+                </div>
+                <label class="search-label">
+                    <span class="sr-only">Buscar productos</span>
+                    <input id="searchInput" type="search" placeholder="Buscar producto...">
+                </label>
+            </div>
+            <div class="filters" id="filters" aria-label="Filtrar productos"></div>
+            <div class="product-grid" id="productGrid"></div>
+        </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-labelledby="cartTitle" aria-hidden="true">
+        <div class="cart-header">
+            <h2 id="cartTitle">Tu carrito</h2>
+            <button class="close-button" id="closeCart" type="button" aria-label="Cerrar carrito">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Todavía no has añadido productos.</p>
+        </div>
+        <div class="cart-footer">
+            <strong>Total <span id="cartTotal">0,00 €</span></strong>
+            <button class="checkout-button" id="checkoutButton" type="button">Finalizar compra</button>
+        </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+</body>
+</html>
